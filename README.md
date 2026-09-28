@@ -2,9 +2,10 @@
 
 Aplicação Node.js do CP4 de Cloud Solutions & Scalable Infrastructure (FIAP 2TSCPW). Fork do [projeto-base](https://github.com/karlosmiguell/atividade-azure-devops), adaptado para consultar o Azure SQL e publicado automaticamente com GitHub Actions.
 
-## Participante
+## Integrantes
 
-Emerson dos Santos Silva — RM562033.
+- Emerson dos Santos Silva — RM562033
+- Vitor Lucas Mattos de Brito Mariano — RM562116
 
 ## Fluxo
 
