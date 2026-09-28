@@ -40,10 +40,10 @@ app.get('/', (req, res) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FIAP - Atividade DevOps</title>
+        <title>FIAP Music Cloud | CP4</title>
         <style>
             body {
-                background-color: #1a1a1a;
+                background-color: #0b1830;
                 color: #ffffff;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin: 0;
@@ -55,15 +55,15 @@ app.get('/', (req, res) => {
                 text-align: center;
             }
             .container {
-                background-color: #262626;
+                background-color: #142640;
                 padding: 40px;
                 border-radius: 12px;
                 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-                border-top: 5px solid #ED145B;
+                border-top: 5px solid #35d0be;
                 max-width: 600px;
             }
             h1 {
-                color: #ED145B;
+                color: #35d0be;
                 margin-top: 0;
             }
             p {
@@ -75,7 +75,7 @@ app.get('/', (req, res) => {
                 display: inline-block;
                 margin-top: 20px;
                 padding: 12px 24px;
-                background-color: #ED145B;
+                background-color: #147cbd;
                 color: #ffffff;
                 text-decoration: none;
                 border-radius: 6px;
@@ -83,7 +83,7 @@ app.get('/', (req, res) => {
                 transition: background-color 0.3s;
             }
             .btn:hover {
-                background-color: #c0104a;
+                background-color: #0b689f;
             }
             .badge {
                 display: inline-block;
@@ -98,11 +98,11 @@ app.get('/', (req, res) => {
     </head>
     <body>
         <div class="container">
-            <div class="badge">Deploy Status: Sucesso! ✅</div>
-            <h1>Atividade DevOps & Cloud</h1>
-            <p>Parabéns! Sua aplicação Node.js foi implementada com sucesso no Azure Web App através da sua esteira CI/CD.</p>
-            <p>O App Insights já está monitorando sua aplicação.</p>
-            <a href="/tema" class="btn">🚀 Ver Dados do Banco</a>
+            <div class="badge">Azure SQL + CI/CD ativo ✅</div>
+            <h1>Music Cloud · CP4</h1>
+            <p>Catálogo de músicas publicado no Azure Web App com deploy automático pelo GitHub Actions.</p>
+            <p>Os registros vêm do Azure SQL e a aplicação envia telemetria ao Application Insights.</p>
+            <a href="/tema" class="btn">🎵 Ver catálogo de músicas</a>
         </div>
     </body>
     </html>
