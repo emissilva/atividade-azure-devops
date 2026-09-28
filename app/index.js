@@ -87,7 +87,7 @@ app.get('/', (req, res) => {
             }
             .badge {
                 display: inline-block;
-                background-color: #4CAF50;
+                background-color: #0f887d;
                 color: white;
                 padding: 5px 10px;
                 border-radius: 4px;
@@ -98,8 +98,8 @@ app.get('/', (req, res) => {
     </head>
     <body>
         <div class="container">
-            <div class="badge">Azure SQL + CI/CD ativo ✅</div>
-            <h1>Music Cloud · CP4</h1>
+            <div class="badge">Deploy automático confirmado · 2TSCPW ✅</div>
+            <h1>Music Cloud · CP4 FIAP</h1>
             <p>Catálogo de músicas publicado no Azure Web App com deploy automático pelo GitHub Actions.</p>
             <p>Os registros vêm do Azure SQL e a aplicação envia telemetria ao Application Insights.</p>
             <a href="/tema" class="btn">🎵 Ver catálogo de músicas</a>
