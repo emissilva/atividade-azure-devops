@@ -111,16 +111,18 @@ app.get('/', (req, res) => {
 
 app.get('/tema', async (req, res) => {
     try {
-        // ALUNOS: Usem a configuração dbConfig para conectar no banco e fazer o SELECT na tabela do tema escolhido!
-        await sql.connect(dbConfig);
-        const result = await sql.query`SELECT * FROM NomeDaSuaTabela`; // ALTERAR AQUI!
-        
+        const pool = await sql.connect(dbConfig);
+        const result = await pool.request().query(
+            'SELECT id, titulo, artista, genero, ano_lancamento FROM dbo.Musicas ORDER BY id'
+        );
         res.json(result.recordset);
     } catch (err) {
         console.error("Erro ao conectar no banco:", err);
-        res.status(500).send("Erro ao buscar os dados: " + err.message);
+        res.status(500).json({ erro: 'Não foi possível consultar as músicas.' });
     }
 });
+
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
 app.listen(port, () => {
     console.log(`Server rodando na porta ${port}`);
