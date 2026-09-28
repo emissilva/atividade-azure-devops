@@ -13,6 +13,8 @@ Emerson dos Santos Silva — RM562033.
 3. O workflow `.github/workflows/main.yml` instala as dependências e publica a branch `main` no WebApp `cp4-musicas-rm562033`.
 4. O segredo `AZURE_WEBAPP_PUBLISH_PROFILE` contém o perfil de publicação do WebApp. As variáveis `DB_SERVER`, `DB_NAME`, `DB_USER`, `DB_PASSWORD` e `APPLICATIONINSIGHTS_CONNECTION_STRING` ficam nas configurações do WebApp, sem credenciais no repositório.
 
+Aplicação pública: [Music Cloud](https://cp4-musicas-rm562033.azurewebsites.net/) · [Catálogo em `/tema`](https://cp4-musicas-rm562033.azurewebsites.net/tema) · [GitHub Actions](https://github.com/emissilva/atividade-azure-devops/actions).
+
 ## Desenvolvimento local
 
 ```bash
