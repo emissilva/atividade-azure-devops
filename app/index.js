@@ -1,4 +1,3 @@
-const express = require('express');
 const appInsights = require('applicationinsights');
 
 // Configuração do Application Insights
@@ -17,6 +16,7 @@ if (process.env.APPLICATIONINSIGHTS_CONNECTION_STRING) {
     console.log("App Insights connection string não encontrada.");
 }
 
+const express = require('express');
 const sql = require('mssql');
 const app = express();
 const port = process.env.PORT || 8080;
